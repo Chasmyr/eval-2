@@ -229,8 +229,8 @@ body .nav .menu {
   left: 0;
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#020943), color-stop(35%, #090979), to(#29f0ed));
-  background: linear-gradient(90deg, #020943 0%, #090979 35%, #29f0ed 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#407973), color-stop(35%, #38b1a5), to(#1ce6d1));
+  background: linear-gradient(90deg, #407973 0%, #38b1a5 35%, #1ce6d1 100%);
 }
 
 body .nav .menu ul {
