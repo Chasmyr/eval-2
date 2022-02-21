@@ -1,18 +1,30 @@
+* {
+    margin: 0;
+}
 body {
     background-color: #171d1c;
 }
 .title {
     color: white;
-    font-size: 3em;
+    font-size: 2em;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    padding-top: 15px;
+    padding: 10px 20px 10px 20px;
+    background-color: #32746d;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+    }
 }
 .content {
     display: grid;
     grid-template-columns: 70% 30%;
-    margin: 20px 40px 0px 40px;
+    margin: 50px 40px 0px 40px;
     .container {
         grid-column: 1/2;
         margin-right: 30px;
@@ -47,8 +59,74 @@ body {
     .ad {
         grid-column: 2/3;
         .pub {
-            width: 500px;
+            width: 450px;
             margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .content {
+        grid-template-columns: 75% 25%;
+        .pub {
+            max-width: 300px;
+        }
+    }
+}
+@media screen and (max-width: 1300px) {
+    .content {
+        grid-template-columns: 100% 0%;
+        .container {
+            margin-right: 0 !important;
+        }
+    }
+    .pub {
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .inner {
+        p {
+            max-width: 500px;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .card {
+        flex-direction: column;
+        justify-content: center;
+        height: auto !important;
+        img {
+            height: auto !important;
+            margin: 20px 20px 40px 20px!important;
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .inner {
+        p {
+            max-width: 400px;
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .inner {
+        p {
+            max-width: 350px;
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    .inner {
+        p {
+            max-width: 300px;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .inner {
+        p {
+            max-width: 250px;
         }
     }
 }
