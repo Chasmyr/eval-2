@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  margin: 0 auto;
+  color: white;
+  font-size: 18px;
+  row-gap: 0;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body .container {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+body .page1 {
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url("./img/randonee.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+body .page1 div {
+  max-height: 25%;
+  margin: 0;
+}
+
+body .page1 h1 {
+  font-size: 5em;
+  padding: 0;
+  margin: 0;
+  margin-top: 200px;
+}
+
+body .page1 h2 {
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+body .page2 {
+  background-color: #171d1c;
+  background-image: url(./img/bgpc1.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+body .page2 h3 {
+  font-size: 3em;
+  text-decoration: underline;
+}
+
+body .page2 .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  margin-top: 5%;
+}
+
+body .page2 .wrap .texte {
+  font-size: 1em;
+  max-width: 500px;
+}
+
+body .page2 .wrap .photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .page2 .wrap .photo img {
+  width: 300px;
+  padding-left: 25%;
+}
+
+body .page2 .wrap .photo:hover {
+  -webkit-transition: all .2s ease-in-out 0s;
+  transition: all .2s ease-in-out 0s;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+body .page3 {
+  background-color: #32746d;
+  background-image: url(./img/bgpc2.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px;
+  scroll-snap-align: start;
+}
+
+body .page3 h3 {
+  font-size: 3em;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+body .page3 .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .page3 .cards h4 {
+  font-size: 1.5em;
+  padding-left: 20px;
+}
+
+body .page3 .card {
+  height: 500px;
+  background-color: #171d1c;
+  width: 325px;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 11px 2px rgba(117, 117, 117, 0.52);
+  box-shadow: 5px 5px 11px 2px rgba(117, 117, 117, 0.52);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+body .page3 .card h4 {
+  margin-bottom: 20px;
+}
+
+body .page3 .card img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+body .page3 .card-margin {
+  margin-right: 80px;
+}
+
+body .page3 .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 5px 5px 11px 2px rgba(117, 117, 117, 0.22);
+          box-shadow: 5px 5px 11px 2px rgba(117, 117, 117, 0.22);
+}
+
+body .nav {
+  position: relative;
+  z-index: 1;
+  height: 0;
+}
+
+body .nav .menu {
+  -webkit-clip-path: circle(25px at calc(100% - 45px) 45px);
+          clip-path: circle(25px at calc(100% - 45px) 45px);
+  -webkit-transition: -webkit-clip-path 0.3s ease-in-out;
+  transition: -webkit-clip-path 0.3s ease-in-out;
+  transition: clip-path 0.3s ease-in-out;
+  transition: clip-path 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#020943), color-stop(35%, #090979), to(#29f0ed));
+  background: linear-gradient(90deg, #020943 0%, #090979 35%, #29f0ed 100%);
+}
+
+body .nav .menu ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+
+body .nav .menu ul li {
+  margin: 15px 0;
+}
+
+body .nav .menu ul li a {
+  color: none;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  background: none;
+  position: relative;
+  line-height: 50px;
+}
+
+body .nav .menu ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .nav #active:checked ~ .menu {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  position: fixed;
+}
+
+body .nav #active {
+  display: none;
+}
+
+body .nav #active:checked ~ .menu-btn i:before {
+  content: "\f00d";
+}
+
+body .nav .menu-btn {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  margin-right: 2%;
+  margin-top: 2%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  color: #000;
+  cursor: pointer;
+  background: #FFF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  .page3 .cards .margin {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container .page2 {
+    height: 1100px;
+  }
+  .container .page2 .wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .page2 .wrap .texte {
+    text-align: center;
+  }
+  .container .page2 .wrap .photo img {
+    padding-left: 0%;
+  }
+  .container .page3 {
+    height: 1800px;
+  }
+  .container .page3 .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .page3 .cards .card {
+    margin-top: 15px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .nav .menu ul li {
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container .page1 h1 {
+    font-size: 2.5em;
+  }
+  .container .page1 h2 {
+    font-size: 1.5em;
+  }
+  .container .page2 h3 {
+    font-size: 1.5em;
+  }
+  .container .page2 .wrap .texte {
+    margin: 10px;
+  }
+  .container .page3 h3 {
+    font-size: 1.5em;
+  }
+  .container .page3 .cards .card {
+    width: 310px;
+    margin: 0px 0px 30px 0px;
+  }
+  .container .page3 .cards .card:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .nav .menu li {
+    margin: 0;
+  }
+  .nav .menu #lie {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
